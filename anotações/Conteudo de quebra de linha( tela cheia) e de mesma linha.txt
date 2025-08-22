@@ -1,0 +1,10 @@
+  Box  level 
+
+  Conteudo que quebra linha e utiliza todo espaço lateral,n contendo nada ao seu lado, ex: (div,p,main,header,h1...h6,nav,article,aside,footer,form,video).
+
+   inline-level
+    Conteudo que podem ser um do lado do outro,ocupando a mesma linha,(span, code, a, smal, stormg, em, sub, label, button, input, select).
+
+    LARGURA:
+    Colocar largura em um objeto o transforma em display: block;
+    Margin: auto; pode resolver o problema o centralizando.

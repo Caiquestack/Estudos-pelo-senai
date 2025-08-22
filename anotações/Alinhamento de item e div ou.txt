@@ -1,0 +1,39 @@
+Display: flex;
+
+  Utilizado para a div pai ou teg pai onde se colocado pode-se alinhar seus filhos dando liberdade de sua posição.
+  (Não se coloca display flex no item a ser alinhado e sim no pai.). Necessario para permitir a porsição que você deseja.
+
+
+ex: 
+
+body{
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  background-color: black; > para facilitar a vizualisação do conteudo.
+  height: 100vh; > utilisado para ocupar toda a tela (vh), especificamente a altura, e se n especificar seu tamanho (teg pai), utilizara só
+  o espaço que foi adicionado a teg filha ou conteudo, assim n se movimentando do lugar pois n a espaço no seu pai.
+}
+
+justify-content: center;alinha itens da esquerda para a direita neste caso ao centro.
+align-items: center; alinha itens de cimba para baixo, neste caso ao centro.
+Funcionam em elementos do tipo inline-level, e tambem em caixas mas é necessario o tranformar em display: flex, embora sua div pai tenha que 
+ter um tamanho especifico pois assim que transformada em display: flex, é limitada apenas ao espaço que éla esta ocupando e não mais a tela 
+inteira, mudando de pocisão que lhe permite, se é tela inteira ou mesmo um espaço pequeno que foi aplicado.
+
+           Margin
+
+ Mas tambem temos margin>(ex: margin: auto;)> isso centraliza o objeto box level ao centro mas não dá esopaço entre os elementos, necessario
+ utilizar por exemplo, (margin: *30px* auto), dando um refrecher entre os elementos.
+ Caso precise este elemento pode ser usado para posicionar em outros lugares também, untilizando, top, bottom, left, right, ou mais especifico
+ por numeros como 50% 50%
+
+A ordem do codigo para posicionar um objeto importa como por exemplo:
+
+1 top:
+2 right:
+3 bottom:
+4 left:
+
+ Assim você não tera problemas com bogs, mas é claro se vc for utlizar menos siga a ordem, mesmo utilizando menos códigos ou acabando pulando 
+ um deles por não utilizar, isso ajudara a ter um resultado melhor e ira melhora a identação.
