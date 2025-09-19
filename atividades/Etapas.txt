@@ -1,0 +1,77 @@
+Siga cada etapa para aplicar estilos a diferentes elementos, mas inicialmente, corrigir erros nas paginas html.
+
+- Crie uma pasta chamada "receitas_de_sucesso"
+- Coloca o index.html
+- Crie uma pasta chamada receitas e coloque as 3 receitas existentes.
+- Crie uma pasta chamada css e crie o arquivo style.css
+
+Obs: Fique a vontade para alterar o tamanho dos textos e também as cores.
+
+Instruções (Passo a Passo)
+Configuração CSS
+
+Começar com o simples reset:
+*{
+   margin: 0;
+   padding: 0;
+}
+
+Selecione o elemento body.
+Defina a família da fonte para Arial, sans-serif. Isso fará com que todo o texto da página utilize essa fonte.
+Obs: Caso não se lembre qual o nome da propriedade, basta buscar no google, digite esse exemplo: "propriedade família da fonte no css"
+Defina a cor de fundo para um cinza claro: #f8f9fa.
+Defina a cor do texto para um cinza escuro: #343a40.
+Ajuste a altura da linha para 1.6 para melhorar a leitura.
+
+Etapa 2: Estilizando Títulos e Parágrafos
+
+Agora, vamos dar destaque aos títulos. Selecione o título principal h1 e aplique as seguintes regras:
+Aumente o tamanho da fonte para 2.5em (em é uma unidade de medida relativa, ótima para acessibilidade).
+Mude a cor do título para saddlebrown.
+Centralize o texto com text-align: center;.
+Transforme todo o texto em letras maiúsculas com text-transform.
+Aumente o espaçamento entre as letras com letter-spacing: 2px;.
+
+Estilize o título secundário h3 (Ingredientes e Modo de Preparo):
+Defina a cor do texto para um cinza mais escuro: #4a4a4a.
+Adicione uma borda lateral esquerda como um detalhe visual: border-left: 4px solid darkgoldenrod;.
+Adicione um espaçamento interno à esquerda para afastar o texto da borda: padding-left: 10px;.
+
+Selecione o parágrafo da descrição da receita (que tem a classe descricao).
+Mude o estilo da fonte para itálico: font-style.
+Defina uma cor de texto mais clara: #6c757d.
+
+Etapa 3: Estilizando Listas
+Agora, vamos cuidar das listas (ul e ol). Selecione ambas e adicione:
+Ajuste o espaçamento interno para padding-left: 20px;.
+Estilize os itens da lista li:
+Adicione uma margem na parte inferior para separar cada item: margin-bottom: 8px;.
+Vamos também dar um estilo especial para o link "Voltar ao Início":
+Selecione o elemento a dentro do parágrafo.
+Remova o sublinhado padrão do link: text-decoration: none;.
+Defina a cor do texto para darkgoldenrod.
+
+Etapa 4: Finalizando com a Tabela
+Selecione a tag hr (a linha horizontal) para estilizá-la:
+Remova a borda padrão com border: 0;.
+Defina a altura da linha para 1px e a cor de fundo para #e0e0e0.
+Adicione margens superior e inferior: margin: 30px 0;.
+
+Agora, vamos estilizar a tabela.
+Defina a largura da tabela para ocupar 100% da área disponível: width: 100%;.
+Una as bordas das células com border-collapse: collapse;.
+Adicione uma margem para separar a tabela do conteúdo acima e abaixo: margin: 20px 0;.
+Estilize as células do cabeçalho da tabela (<th>):
+Defina a cor de fundo para saddlebrown.
+Mude a cor do texto para branco: #ffffff.
+Adicione espaçamento interno: padding: 12px;.
+Estilize as células de dados (<td>)
+Adicione uma borda fina e cinza: border: 1px solid #dee2e6;.
+Adicione espaçamento interno: padding: 10px;.
+Centralize o texto com text-align: center;.
+Para dar um toque final, adicione um estilo para alternar as cores das linhas da tabela.
+Selecione a tag tbody e, em seguida, as linhas pares (<tr>) com o seletor tbody tr:nth-child(even).
+Defina a cor de fundo para um cinza muito claro: #f2f2f2.
+
+
+PLUS: Se conseguiu chegar até aqui, tente criar mais uma pagina de receita.

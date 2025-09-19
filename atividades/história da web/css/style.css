@@ -1,0 +1,103 @@
+* {
+     padding: 0;
+     border: 0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     list-style: none;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+
+     background-color: rgb(212, 212, 212);
+     line-height: 2em;
+}
+
+/* inicio do Cabeçalho */
+#caixa {
+     text-align: center;
+     background-color: rgb(255, 255, 255);
+}
+
+h1 {
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     padding: 10px;
+}
+
+#titulo {
+     background-color: black;
+     color: white;
+}
+
+#navegacao {
+     background-color: rgb(36, 113, 255);
+     box-shadow: 2px 1px 2px 0 rgba(0, 0, 0, 0.453);
+}
+
+li {
+     padding: 15px;
+     display: inline-block;
+}
+
+nav>ul>li>a {
+     color: rgb(255, 255, 255);
+     padding: 10px;
+}
+
+nav>ul>li>a:hover {
+     background-color: black;
+     border-radius: 5px;
+     transition: .3s;
+
+}
+
+/* fim do Cabeçalho */
+/* corpo */
+#artigoprincipal {
+     max-width: 900px;
+     min-width: 400px;
+     margin: auto;
+     display: block;
+     margin-top: 20px;
+     background-color: white;
+     border-radius: 5px;
+     padding: 10px;
+     margin-bottom: 20px;
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+p {
+     padding: 11px;
+}
+
+h3 {
+     margin-top: 10px;
+     padding-left: 10px;
+     border-left: 3px solid red;
+}
+
+h2 {
+     text-align: center;
+}
+
+img {
+     max-width: 100%;
+}
+
+figure {
+     font-style: italic;
+     text-align: center;
+     font-size: .9em;
+}
+
+/* corpo */
+
+/* footer */
+#fim {
+     text-align: center;
+     color: white;
+     background-color: rgb(35, 35, 35);
+}
+
+/* footer */
