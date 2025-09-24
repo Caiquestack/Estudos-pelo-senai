@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #f0f0f0;
+}
+
+
+.wrapper{
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+main, footer {
+    flex: 1;
+}
+
+
+main, footer {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* AS SEÇÕES dentro do main e do footer devem crescer para preencher o espaço horizontal */
+section{
+    flex: 1;
+}
+
+
+header, section{
+    min-height: 100px; /* Garante uma altura mínima para todos os blocos */
+   
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    transition: all 0.3s ease;
+}
+
+
+header:hover,
+section:hover,
+footer section:hover {
+    cursor: pointer;
+    box-shadow: none;
+    background-color: rgb(226, 226, 226);
+}
