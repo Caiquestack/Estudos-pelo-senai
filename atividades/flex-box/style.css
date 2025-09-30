@@ -22,33 +22,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-nav{
-
-    justify-content: center;
-    align-items: center;
-    
-    flex-wrap: wrap;
-    background-color: #333;
-    border-radius: 5px ;
-}
-
-nav>ul{
-    display: flex;
-    
-    justify-content: space-around;
-}
-nav a{
-    display: inline-block;
-
-    padding: 20px;
-    color: white;
-}
-nav a:hover{
-    color: #006af5;
-    cursor: pointer;
-}
-
-main{
+main {
     flex: 1;
 
     min-height: 400px;
@@ -60,15 +34,16 @@ main{
     height: 80vh;
     background-color: #f0f0f0;
     border: solid 1px rgb(0, 0, 0);
-    
+
     background-image: url(https://img.odcdn.com.br/wp-content/uploads/2023/04/codigo-programacao-Ali-Shah-Lakhani-Unsplash.jpg);
     filter: brightness(0.7);
-    
-    background-size:cover;
+
+    background-size: cover;
     background-position: right;
-    
+
 }
-main:hover{
+
+main:hover {
     filter: brightness(1);
 
     box-shadow: none;

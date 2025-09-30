@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styletodos.css" />
+    <style>
+      
+      main, footer {
+    flex: 1;
+}
+
+
+main, footer {
+    display: flex;
+    gap: 15px;
+}
+
+
+/* AS SEÇÕES dentro do main e do footer devem crescer para preencher o espaço horizontal */
+section{
+    flex: 1;
+}
+
+
+header, section{
+    min-height: 100px; /* Garante uma altura mínima para todos os blocos */
+   
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 6px 6px 3px rgba(0,0,0,0.2);
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    transition: all 0.3s ease;
+}
+    </style>
+    <title>Layout 4</title>
+  </head>
+  <body>
+    <div class="wrepper">
+      <nav>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/paginas/layout1.html"> Layout 1</li></a>
+          <li><a href="/paginas/layot2.html">Layout 2</li></a>
+          <li><a href="/paginas/layout3.html">Layout 3</li></a>
+          <li><a href="/paginas/layout4.html">Layout 4</li></a>
+          <li><a href="/paginas/layout5.html">Layout 5</li></a>
+        </ul>
+      </nav>      
+      <header>HEADER</header>
+      <main>
+        <section>MAIN SECTION #1</section>
+        <section>MAIN SECTION #2</section>
+      </main>
+      <main>
+        <section>MAIN SECTION #1</section>
+        <section>MAIN SECTION #2</section>
+      </main>
+        <section>FOOTER SECTION #1</section>
+      </footer>
+    </div>
+  </body>
+</html>
