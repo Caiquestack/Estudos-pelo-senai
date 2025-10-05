@@ -1,0 +1,265 @@
+:root {
+  --border: 2px solid rgb(0, 0, 0);
+  --border-dashed: 2px dashed rgb(0, 0, 0);
+  --shadow: rgba(130, 131, 132, 0.562) 0px 8px 24px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Todas as paginas comtem o mesmo css apresentado abaixo */
+body {
+  font-size: 1.5em;
+  background-color: #f0f0f0;
+
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  background-image: url(imagem/fundo.jpg);
+}
+.wrapper {
+  height: 100vh;
+  max-width: 800px;
+  min-width: 600px;
+  margin: 0 auto;
+
+  gap: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+  background-color: #333;
+  border-radius: 5px;
+}
+
+nav > ul {
+  display: flex;
+
+  justify-content: space-around;
+}
+
+nav a {
+  display: inline-block;
+
+  padding: 20px;
+  color: white;
+}
+
+nav a:hover {
+  color: #006af5;
+  cursor: pointer;
+}
+header:hover,
+main:hover,
+section:hover,
+footer:hover {
+  transition: all 0.3s ease;
+
+  box-shadow: var(--shadow);
+}
+
+/* -------------------------------------------------- */
+/* home */
+/* -------------------------------------------------- */
+
+.wrapper {
+  height: 100vh;
+  max-width: 800px;
+  min-width: 600px;
+  margin: 0 auto;
+
+  gap: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+#paginaPrincipal main {
+  flex: 1;
+
+  height: 80vh;
+  min-height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(https://img.odcdn.com.br/wp-content/uploads/2023/04/codigo-programacao-Ali-Shah-Lakhani-Unsplash.jpg);
+  background-size: cover;
+  background-position: right;
+
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray;
+
+  border: var(--border);
+
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+}
+#paginaPrincipal main:hover {
+  filter: none;
+  -webkit-filter: none;
+
+  box-shadow: none;
+  background-color: lightskyblue;
+  cursor: pointer;
+}
+
+/* ------------------------------- */
+/* Página 1 */
+/* -------------------------------------------------- */
+
+#pagina1 .posicao {
+  display: flex;
+  flex: 1;
+
+  align-items: center;
+  justify-content: center;
+
+  border: var(--border);
+}
+#pagina1 {
+  color: rgba(255, 255, 255, 0.788);
+
+  background-image: url(imagem/imgflo4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#pagina1 header {
+  background-image: url(imagem/imgflo-1.jpg);
+  background-size: cover;
+}
+#pagina1 section {
+  background-image: url(imagem/imgflo-2.png);
+  background-size: cover;
+}
+#pagina1 footer {
+  background-image: url(imagem/imgflo-3.png);
+  background-size: cover;
+}
+#pagina1 main {
+  display: flex;
+  justify-content: center;
+
+  flex: 1;
+  gap: 15px;
+}
+/* ------------------------------------ */
+/* Página 2 */
+/* -------------------------------------------------- */
+
+#pagina2 header,
+#pagina2 main,
+#pagina2 footer {
+  display: flex;
+  flex: 1;
+
+  justify-content: center;
+  align-items: center;
+  border: var(--border);
+}
+#pagina2 main {
+  flex: 2;
+}
+/* --------------------------- */
+/* Página 3 */
+/* -------------------------------------------------- */
+
+#pagina3 header,
+#pagina3 main,
+#pagina3 footer,
+#pagina3 .posicao {
+  flex: 1;
+}
+
+#pagina3 header,
+#pagina3 main,
+#pagina3 footer {
+  display: flex;
+  gap: 20px;
+}
+
+#pagina3 .posicao {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  border: var(--border);
+}
+/* ------------------------- */
+/* Página 4 */
+/* -------------------------------------------------- */
+
+#pagina4 main,
+#pagina4 footer {
+  flex: 1;
+}
+
+#pagina4 main,
+#pagina4 footer {
+  display: flex;
+  gap: 15px;
+}
+
+/* AS SEÇÕES dentro do main e do footer devem crescer para preencher o espaço horizontal */
+#pagina4 section {
+  flex: 1;
+}
+#pagina4 header,
+#pagina4 section {
+  min-height: 100px; /* Garante uma altura mínima para todos os blocos */
+
+  background-color: white;
+  border: var(--border);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------------- */
+/* Página 5 */
+/* -------------------------------------------------- */
+
+#pagina5 main,
+#pagina5 footer {
+  flex: 1;
+}
+
+#pagina5 header,
+#pagina5 footer {
+  display: flex;
+  gap: 15px;
+}
+
+#pagina5 header section,
+#pagina5 footer section {
+  flex: 1;
+}
+
+#pagina5 .secao-maior {
+  flex: 2;
+}
+#pagina5 main,
+#pagina5 section {
+  background-color: white;
+  border: var(--border);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 80px;
+}
+/* -------------------------------------------------- */
+
+/* -------------------------------------------------- */
