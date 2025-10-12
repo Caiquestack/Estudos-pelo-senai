@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Acoordion</title>
+</head>
+<body>
+    <!--
+    As tags <details> e <summary> são elementos do HTML5 que permitem criar seções expansíveis e recolhíveis em uma página web, sem a necessidade de JavaScript.
+    O <details> define o bloco que pode ser expandido ou contraído, enquanto o <summary> representa o título ou cabeçalho visível dessa seção. Ao clicar no 
+    <summary>, o conteúdo interno do <details> é exibido ou ocultado automaticamente. Essas tags são muito utilizadas para criar FAQs, menus, acordions e outros
+    componentes interativos, tornando o site mais acessível e organizado. Além disso, são suportadas nativamente pelos navegadores modernos, garantindo melhor 
+    desempenho e simplicidade no desenvolvimento. 
+     -->
+
+    <section class="FAQ">
+        <h1>Perguntas Frequentes </h1>
+
+        <details>
+            <summary><img src="https://i.gifer.com/6LE.gif" alt="Imagem de um foguete">O que é um componente "accordion"?</summary>
+            <div class="details-content">
+                <p>Um accordion (ou sanfona) é um elemento de interface que permite mostrar e esconder seções de conteúdo. Ele é útil para organizar grandes
+                    volumes de informação em um espaço compacto, como em uma página de FAQ.</p>
+                <p>A principal vantagem é que o usuário pode focar no conteúdo que lhe interessa, sem se distrair com o resto.</p>
+                <img src="https://placehold.co/600x300/e2e8f0/4a5568?text=Exemplo+Visual" alt="ilustração de exemplo">
+            </div>
+        </details>
+
+        <details>
+            <summary><img src="https://i.gifer.com/6LE.gif" alt="Imagem de um foguete">Preciso de JavaScript para criar um?</summary>
+            <div class="details-content">
+                <p>Não mais! Antigamente, JavaScript era essencial. Hoje, o HTML5 oferece as tags <strong>&lt;details&gt;</strong> e <strong>&lt;summary&gt;</strong>,
+                   que criam um accordion funcional nativamente, sem nenhuma linha de script.</p>
+                <p>Isso torna o componente mais leve, rápido e acessível por padrão.</p>
+            </div>
+            </details>
+
+        <details>
+            <summary><img src="https://i.gifer.com/6LE.gif" alt="Imagem de um foguete">Como a estilização foi melhorada aqui?</summary>
+            <div class="details-content">
+                <p>Nesta versão, focamos em um design mais limpo e profissional:</p>
+                <ul>
+                    <li><p><strong>Lorem Ipsum:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error pariatur laudantium nam repellat odio aspernatur
+                         sequi aperiam aliquam molestias, esse qui quas necessitatibus quibusdam praesentium illum eaque quia, earum ratione..</p></li>
+                    <li><p><strong>Lorem Ipsum</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></li>
+                    <li><p><strong>Lorem Ipsum:</strong> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, quod nulla, ratione ipsam temporibus libero illum
+                         repudiandae eveniet perferendis tenetur reiciendis mollitia. Laborum excepturi laboriosam corrupti autem aliquid eaque eveniet.</p></li>
+                    <li><p><strong>Lorem Ipsum:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p></li>
+                </ul>
+            </div>
+        </details>
+
+        <details>
+            <summary><img src="https://i.gifer.com/6LE.gif" alt="Imagem de um foguete">Lorem ipsom?</summary>
+            <div class="details-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
+        </details>
+
+    </section>
+</body>
+</html>
