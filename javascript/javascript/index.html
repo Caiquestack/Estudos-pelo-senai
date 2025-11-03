@@ -1,0 +1,145 @@
+<script>
+  // cont -> variavel que não pode ser reatribuída
+  // var -> variavel que pode ser reatribuída
+  // let -> variavel que pode ser reatribuída e tem escopo de bloco
+  //   const minhaConstante = 'Olá, Mundo!';
+  //   -------------------------------------------------
+  // --------------------------------------------------
+  // var minhaVariavel = 'Novo valor da variavel';
+  // console.log(minhaVariavel);
+  // minhaVariavel = 'Outro valor da variavel';
+  // console.log(minhaVariavel);
+  // ---------------------------------------------------
+  // ---------------------------------------------------
+  // string;-> texto
+  // nunber; -> números inteiros e decimais;
+  // boolean 0 ou 1  0 -> false, 1 -> true;
+  // null -> valor nulo;
+  // undefined -> valor indefinido;
+  // array -> lista de valores;
+  // object -> objeto com propriedades e valores;
+  // ---------------------------------------------------
+  // ---------------------------------------------------
+  //   var multiplo = "";
+  //   console.log("primeira fase", multiplo);
+
+  //   var multiplo = 10;
+  //   console.log("Segunda fase", multiplo);
+
+  //   multiplo = multiplo * 3;
+  //   console.log("Segunda fase", multiplo);
+
+  // ---------------------------------------------------
+  // ---------------------------------------------------
+  // soma de dois números
+  // +pronpt -> converte string para número
+  // -prompt -> converte string para número
+  // Nan -> erro de conversão, nao é um número
+
+  // const primeiroNumero = +prompt("Digite o primeiro número: ");
+  // const segundoNumero = +prompt("Digite o segundo número: ");
+  // const soma = primeiroNumero + segundoNumero;
+  // const subtração = primeiroNumero - segundoNumero;
+  // const multiplicação = primeiroNumero * segundoNumero;
+  // const divisão = primeiroNumero / segundoNumero;
+  // alert(`A soma é: ${soma} a subtração é: ${subtração} a multiplicação é: ${multiplicação} a divisão é: ${divisão}`);
+
+  // const primeiroNumero = +prompt("Digite o primeiro número: ");
+  // const segundoNumero = +prompt("Digite o segundo número: ");
+
+  //  = - > attrinuição
+  //  == -> comparação de valor
+
+  // if (segundoNumero  ==  0) {
+  //     alert("Não é possível dividir por zero");
+  // } else {
+  //     const divisão = primeiroNumero / segundoNumero;
+  //     alert(`A divisão é: ${divisão}`);
+  // }
+
+  //   console.log(primeiroNumero);
+  //   console.log(segundoNumero);
+  //   console.log(soma)
+
+  // VOCÊ É RESPONSÁVEL PELA CRIAÇÃO DE UM SISTEMA E CADASTRO DE USUÁRIO
+  // NESTE CADASTRO DEVE CONTER: NOME, IDADE, CEP, COR DO CABELO, ALTURA.
+  // SE O USUARIO TIVER CABELO LOIRO, DEVE ALERTAR "USUARIO LOIRO"
+  // SE O USUARIO TIVER 18 ANOS OU MAIS DE IDADE, DEVE ALERTAR "USUARIO MAIOR DE IDADE"
+  // SE O USUARIO TIVER MENOS DE 18 ANOS, DEVE ALERTAR "USUARIO MENOR DE IDADE"
+
+  // AO FINAL, O SISTEMA DEVE MOSTRAR OS DADOS DO USUÁRIO DA SEGUINTE FORMA
+  // NO CONSOLE:
+  // Nome: NOMEDOUSUARIO
+  // Idade: IDADEDOSUARIO
+  // CEP: CEPDOUSUARIO
+  // Altura: ALTURADOUSUARIO.
+
+  // var nome = prompt('Digite seu nome: ');
+  // var idade = prompt('Digite sua idade: ');
+  // var cep = prompt('Digite seu cep: ');
+  // var cabelo = prompt('Digite a cor do seu cabelo: ');
+  // var altura = prompt('Digite sua altura: ');
+
+  // console.log("Dados do usuario Cadatrado:");
+
+  // if (cabelo == 'loiro') {
+  //     alert('USUARIO LOIRO');
+
+  // }
+  // if(idade >= 18) {
+  //     alert('USUARIO MAIOR DE IDADE');
+  // } else {
+  //     alert('USUARIO MENOR DE IDADE');
+  // }
+  // alert(`Olá aqui vai os seus dados \nNome: ${nome}\nIdade: ${idade}\nCEP: ${cep}\nAltura: ${altura}`);
+
+  // const idade = prompt("Digite sua idade para saber se você pode entrar: ");
+  // if (idade >= 18) {
+  //   console.log(`Voce tem ${idade} anos,maior de iadade pode entrar`);
+  // } else {
+  //   console.log(`Voce tem ${idade} anos, menor de idade não pode entrar`);
+  // }
+  // if (idade >= 70) {
+  //   console.log(`Voce tem ${idade} anos e paga meia pode entrar mas cuide-se!`);
+  //
+
+  //   🎟️ Desafio: Calculadora de Preços de Cinema
+  // Nosso script precisará definir o preço do ingresso com base nas seguintes regras (usando duas variáveis: idade e diaSemana):
+
+  // Preço Base: R$ 30.00.
+
+  // Desconto por Idade: Se a idade for menor que 18 OU maior ou igual a 60, o ingresso custa R$ 15.00.
+
+  // Promoção de Terça: Se o diaSemana for "Terca" (Terça-feira), o ingresso custa R$ 20.00, mas somente se a pessoa não já se qualificou para o Desconto por Idade (Regra 2).
+
+  // Para começar, vamos declarar as variáveis e o preço base. Eu sugiro usar o domingo como dia de teste (preço normal) e a idade de 25 anos.
+
+  // let preco = 30.00;
+  // const idade = 25;
+  // const diaSemana = "Domingo";
+
+  let presço = 30.0;
+  let promo = 15.0;
+  let terça = 20.0;
+  const idade = prompt("Digite sua idade: ");
+  const diaSemana = prompt("Digite o dia da semana: ");
+  // const siaSemana = domingo;
+
+  if (
+    diaSemana == " Terça-feira" ||
+    diaSemana == "Terça-feira" ||
+    diaSemana == "terça" ||
+    diaSemana == "terca"
+  ) {
+    alert(
+      `Hoje é terça-feira,então o preço do ingresso é R$ ${terça}, mas somente se você não se qualificou para o Desconto por Idade.`
+    );
+  } else {
+    alert(`Hoje não é terça-feira,então o preço do ingresso é R$ ${presço}.`);
+  }
+  if (idade < 18 || idade >= 60) {
+    alert(`Você tem ${idade} anos,então o preço do ingresso é R$ ${promo}`);
+  } else if (idade > 18 || idade < 60) {
+    alert(`Você tem ${idade} anos,então o preço do ingresso é R$ ${presço}`);
+  }
+</script>
