@@ -118,28 +118,37 @@
   // const idade = 25;
   // const diaSemana = "Domingo";
 
-  let presço = 30.0;
-  let promo = 15.0;
-  let terça = 20.0;
-  const idade = prompt("Digite sua idade: ");
-  const diaSemana = prompt("Digite o dia da semana: ");
-  // const siaSemana = domingo;
+  // var idade = prompt("Digite sua idade: ");
+  // var diaSemana = prompt("Digite o dia da semana: ");
+  // const valor = 30.0;
+  // const promo = 15.0;
+  // const terca = 20.0;
+  // // const siaSemana = domingo;
+  // diaSemana.toUpperCase();
 
-  if (
-    diaSemana == " Terça-feira" ||
-    diaSemana == "Terça-feira" ||
-    diaSemana == "terça" ||
-    diaSemana == "terca"
-  ) {
-    alert(
-      `Hoje é terça-feira,então o preço do ingresso é R$ ${terça}, mas somente se você não se qualificou para o Desconto por Idade.`
-    );
-  } else {
-    alert(`Hoje não é terça-feira,então o preço do ingresso é R$ ${presço}.`);
-  }
-  if (idade < 18 || idade >= 60) {
-    alert(`Você tem ${idade} anos,então o preço do ingresso é R$ ${promo}`);
-  } else if (idade > 18 || idade < 60) {
-    alert(`Você tem ${idade} anos,então o preço do ingresso é R$ ${presço}`);
-  }
+  // if (idade == "" || diaSemana == "") {
+  //   alert(
+  //     "Digite um dia da semana para iniciar!\n Ex: terça, segunda,quarta...\n Não esqqueça de imformarr sua idade!"
+  //   );
+  // } else {
+  //   if (idade < 18 || idade >= 60) {
+  //     alert(
+  //       `Você tem ${idade}, então tem direito a meia, ${promo}reais!\n Aproveite o seu filme.`
+  //     );
+  //   } else {
+  //     if (idade >= 18 || idade < 60) {
+  //       alert(`Você não tem direito a maia entrada!`);
+  //     } else {
+  //       if (diaSemana == "terça" || diaSemana == "terca") {
+  //         alert(
+  //           `A sua entrada passa a ser agora ${terca}, aproveite a promoção do dia!`
+  //         );
+  //       } else{
+  //         if( diaSemana == "segunda" || diaSemana == "quarta" || diaSemana == "quinta" || diaSemana == "sexta" || diaSemana == "sabádo" || diaSemana == "domingo"){
+  //           alert(`Aproveite o seu filme nessa ${diaSemana}.`);
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 </script>
