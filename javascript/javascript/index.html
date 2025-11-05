@@ -278,4 +278,34 @@
     // Lembre-se de converter a entrada de idade para um tipo numérico.
     // A ordem das verificações é crucial. A verificação de idade deve ser a primeira.
     // Aninhe o if/else dentro do case do switch que trata o ingresso do tipo 'CONVIDADO'.
+  
+    // Tipo de ingresso: 'VIP', 'PADRAO', 'CORTESIA', ou 'CONVIDADO'.
+
+  // const:atribuição
+  const ingresoVip = "vip";
+  const ingresoPadrão = "Padrão";
+  const ingresoCortesia = "cortesia";
+  const ingresoconVidado = "convidado";
+  // ---------------------------------->
+  // ---------------------------------->
+
+  //  inicio de if e else
+  var idade = +prompt("Informe sua idade:");
+  if (idade == "") {
+    alert("Digite um número!");
+  } else {
+    if (idade < 18) {
+      alert("Você é menor de idade não pode entrar. Acesso negado!");
+    } else if ((idade) => 18) {
+      alert(`Você tem ${idade} anos, e pode entrar!`);
+    }
+  }
+  // Segunda verificação (usando switch):
+    var classificacão = prompt("Informe sua classe atual que você se encontra no convite:\n Ex: verdo ou vermelho!");
+
+  switch (true){
+    case 'VIP':
+    case 'PADRAO':
+      alert(`sua classificação é verde e você está com o ingresso pago!`)
+  }
 </script>
