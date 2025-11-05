@@ -103,52 +103,179 @@
   //   console.log(`Voce tem ${idade} anos e paga meia pode entrar mas cuide-se!`);
   //
 
-  //   🎟️ Desafio: Calculadora de Preços de Cinema
-  // Nosso script precisará definir o preço do ingresso com base nas seguintes regras (usando duas variáveis: idade e diaSemana):
 
-  // Preço Base: R$ 30.00.
+    //---------------------------------------------> 
+    //---------------------------------------------> 
+  
+    //---------------------------------------------> 
+    // Primeira atividade
+    //---------------------------------------------> 
+    // 1. Classificação de nota
+    // Descrição:
+    // Leia uma nota de 0 a 10.
+    // Use if else para classificar:
+    // • Aprovado (≥7)
+    // • Recuperação (≥5 e <7)
+    // • Reprovado (<5)
+    // Depois, use switch case para mostrar um elogio ou mensagem com base no 
+    // resultado (por exemplo: "Parabéns", "Quase lá", "Estude mais").
 
-  // Desconto por Idade: Se a idade for menor que 18 OU maior ou igual a 60, o ingresso custa R$ 15.00.
 
-  // Promoção de Terça: Se o diaSemana for "Terca" (Terça-feira), o ingresso custa R$ 20.00, mas somente se a pessoa não já se qualificou para o Desconto por Idade (Regra 2).
+    // var nota = +prompt('Digite sua nota!')
+    // if (nota >= 7) {
+    //     alert(`Sua nota é ${nota}, e você esta APROVADO`)
+    // } else {
+    //     if (nota >= 5 && nota < 7) {
+    //         alert(`Sua nota é ${nota}, e você está de recuperação!`)
+    //     } else {
+    //         if (nota < 5) {
+    //             alert(`Sua nota é ${nota}, e você está reprovado`)
+    //         }
+    //     }
+    // }
+    // switch (true) {
+    //     case (nota > 7):
+    //         alert('Parabéns pela sua nota ')
+    //         break;
+    //     case (nota >= 5 && nota <= 7):
+    //         alert('Quase lá em, não desista')
+    //         break;
+    //     case (nota < 5):
+    //         alert('Quem sabe da próxima vez.')
+    //         break;
+    // }
 
-  // Para começar, vamos declarar as variáveis e o preço base. Eu sugiro usar o domingo como dia de teste (preço normal) e a idade de 25 anos.
+    //---------------------------------------------> 
+    // segunda atividade
+    //---------------------------------------------> 
+    // 2. Menu de lanchonete
+    // Descrição:
+    // Mostre um menu de opções, por exemplo:
+    // 1 - Hambúrguer
+    // 2 - Batata Frita
+    // 3 - Refrigerante
+    // 4 - Sobremesa
+    // Use switch case para exibir o item escolhido e seu preço.
+    // Depois, use if else para aplicar um desconto de 10% se o valor total for maior que 
+    // R$ 20
 
-  // let preco = 30.00;
-  // const idade = 25;
-  // const diaSemana = "Domingo";
+    // const menu = +prompt(' Escolha um deses itens do menu: \n1 hambúrguer\n 2 batata frita\n 3 refrigerante0\n 4 sobremesa. ')
+    // const promo = 20 * 0.8
 
-  // var idade = prompt("Digite sua idade: ");
-  // var diaSemana = prompt("Digite o dia da semana: ");
-  // const valor = 30.0;
-  // const promo = 15.0;
-  // const terca = 20.0;
-  // // const siaSemana = domingo;
-  // diaSemana.toUpperCase();
+    // switch (true) {
+    //     case (menu == 1):
+    //         alert(' Você escolheu o hambúrguer, que custa: 20 reais')
+    //         break;
+    //     case (menu == 2):
+    //         alert('Você escolheu o batata frita, que custa: 15 reis ')
+    //         break;
+    //     case (menu == 3):
+    //         alert('Você escolheu o Refrigerante, que custa: 7 reais')
+    //         break;
+    //     case (menu == 4):
+    //         alert('Você escolheu o Sobremesa, que custa: 19 reis ')
+    //         break
+    // }if (menu == 1) {
+    //     alert(`Mas Você ganhou um desconto de 10% pelo hanbúrguer. Total a pagar: ${promo}.`)
+    // } else {
+    //     if (menu == '') {
+    //         alert('Digite um valor')
+    //     }
+    // }
 
-  // if (idade == "" || diaSemana == "") {
-  //   alert(
-  //     "Digite um dia da semana para iniciar!\n Ex: terça, segunda,quarta...\n Não esqqueça de imformarr sua idade!"
-  //   );
-  // } else {
-  //   if (idade < 18 || idade >= 60) {
-  //     alert(
-  //       `Você tem ${idade}, então tem direito a meia, ${promo}reais!\n Aproveite o seu filme.`
-  //     );
-  //   } else {
-  //     if (idade >= 18 || idade < 60) {
-  //       alert(`Você não tem direito a maia entrada!`);
-  //     } else {
-  //       if (diaSemana == "terça" || diaSemana == "terca") {
-  //         alert(
-  //           `A sua entrada passa a ser agora ${terca}, aproveite a promoção do dia!`
-  //         );
-  //       } else{
-  //         if( diaSemana == "segunda" || diaSemana == "quarta" || diaSemana == "quinta" || diaSemana == "sexta" || diaSemana == "sabádo" || diaSemana == "domingo"){
-  //           alert(`Aproveite o seu filme nessa ${diaSemana}.`);
-  //         }
-  //       }
-  //     }
-  //   }
-  // }
+    // 3. Par ou Ímpar com faixa de valor
+    // Descrição:
+    // Peça um número inteiro.
+    // Use if else para determinar se é positivo, negativo ou zero.
+    // Use switch case para verificar se é par ou ímpar (dica: use numero % 2).
+    // Exemplo:
+    // Entrada: -7
+    // Saída:
+    // Número negativo
+    // Ímpar
+    // && -> agregaro "e"
+    // || -> agregador "ou"
+    // == -> comparação
+    // != -> diferente 
+
+    // var parImpar = +prompt('Digite um numero para identificar se ele é par ou impar, ex: 1,2,3,4,5,6....')
+
+    // if (parImpar > 0) {
+    //     alert('Numero positivo')
+
+    // } else {
+    //     if (parImpar < 0) {
+    //         alert('Esse numero é negativo')
+    //     } else if (parImpar == 0) {
+    //         alert('Digite um numero além de zero, pois ele não esiste!')
+    //     }
+    // }
+    // switch (parImpar % 2) {
+    //     case 0:
+    //         alert("Par")
+    //         break;
+    //     case 1:
+    //     case -1:
+    //         alert("Impar")
+    //         break;
+    //     default:
+    //         alert(" não foi possível determinar se é par ou impar.")
+    // }
+
+
+
+
+
+
+    //  Exercício: Sistema de controle de acesso a evento
+    // Desenvolva um programa que simule a verificação de entrada em um evento VIP, aplicando diferentes regras com base no tipo de ingresso e nas condições do portador.
+    // Requisitos do programa
+    // Solicite ao usuário que insira os seguintes dados:
+    // Tipo de ingresso: 'VIP', 'PADRAO', 'CORTESIA', ou 'CONVIDADO'.
+    // Idade: Um número inteiro.
+    // Status do pagamento: 'PAGO' ou 'PENDENTE' (somente para ingressos 'VIP' e 'PADRAO').
+    // Código de convite: Uma letra única de 'A' a 'E' (somente para ingressos 'CONVIDADO').
+    // A lógica de acesso deve seguir as seguintes regras:
+    // Primeira verificação (usando if/else if/else):
+    // Se o usuário tiver menos de 18 anos, exiba uma mensagem de acesso negado por idade.
+    // Se o usuário tiver 18 anos ou mais, continue para a próxima verificação, que é o tipo de ingresso.
+    // Segunda verificação (usando switch):
+    // Com base no tipo de ingresso, aplique as seguintes regras:
+    // case 'VIP': O usuário só pode entrar se o status do pagamento for 'PAGO'. Caso contrário, negue o acesso por pagamento pendente.
+    // case 'PADRAO': O usuário só pode entrar se o status do pagamento for 'PAGO'. Se for 'PENDENTE', negue o acesso. Se o ingresso for 'PADRAO' e o pagamento estiver 'PAGO', conceda o acesso, mas informe que ele não tem acesso à área VIP.
+    // case 'CONVIDADO': Continue para a terceira verificação (código do convite).
+    // case 'CORTESIA': Conceda o acesso e exiba uma mensagem de boas-vindas.
+    // default: Se o tipo de ingresso for inválido, exiba uma mensagem de erro.
+    // Terceira verificação (usando if/else aninhado dentro do case 'CONVIDADO'):
+    // Se o código de convite for 'A' ou 'B', conceda acesso total (entrada e área VIP).
+    // Se o código de convite for 'C', 'D' ou 'E', conceda acesso normal, sem acesso à área VIP.
+    // Para qualquer outro código de convite, exiba uma mensagem de erro de convite inválido.
+    // Saídas esperadas
+    // O programa deve exibir uma mensagem clara informando se o acesso foi concedido ou negado e, em caso afirmativo, qual o nível de acesso.
+    // Exemplo de entradas e saídas
+    // Entrada 1:
+    // Idade: 25
+    // Tipo de ingresso: VIP
+    // Status do pagamento: PENDENTE
+    // Saída: Acesso negado: Pagamento pendente.
+    // Entrada 2:
+    // Idade: 17
+    // Tipo de ingresso: CONVIDADO
+    // Código de convite: A
+    // Saída: Acesso negado: Idade não permitida.
+    // Entrada 3:
+    // Idade: 30
+    // Tipo de ingresso: CONVIDADO
+    // Código de convite: B
+    // Saída: Acesso concedido: Entrada permitida. Acesso à área VIP incluído.
+    // Entrada 4:
+    // Idade: 22
+    // Tipo de ingresso: PADRAO
+    // Status do pagamento: PAGO
+    // Saída: Acesso concedido: Entrada permitida. Sem acesso à área VIP.
+    // Dicas
+    // Use variáveis para armazenar as entradas do usuário.
+    // Lembre-se de converter a entrada de idade para um tipo numérico.
+    // A ordem das verificações é crucial. A verificação de idade deve ser a primeira.
+    // Aninhe o if/else dentro do case do switch que trata o ingresso do tipo 'CONVIDADO'.
 </script>
