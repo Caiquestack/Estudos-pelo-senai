@@ -295,9 +295,6 @@
       }
     }
     // Segunda verificação (usando switch):
-    var classificacao = prompt(
-      "Informe seu status de pagamento:\n Ex: pago ou Pendente!"
-    );
 
     var tipoIngresso = prompt(
       "Digite o seu tipo de ingresso.\n Ex: [vip], [cortesia],[convidado],[padrão]."
@@ -305,6 +302,9 @@
 
     var tipoConvite = prompt(
       "Digite sua classe de convite.\n Ex: a, b =>para vip e cortesia;  c, d, e => para padrão;"
+    );
+    var classificacao = prompt(
+      "Informe seu status de pagamento:\n Ex: pago ou Pendente!"
     );
 
     switch (tipoIngresso) {
