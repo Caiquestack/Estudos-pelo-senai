@@ -280,61 +280,83 @@
     // Aninhe o if/else dentro do case do switch que trata o ingresso do tipo 'CONVIDADO'.
   
     // Tipo de ingresso: 'VIP', 'PADRAO', 'CORTESIA', ou 'CONVIDADO'.
+//  inicio de if e else
+  function verificarAcesso() {
+    var idade = +prompt("Informe sua idade:");
+    if (idade == "" || idade == 0) {
+      alert("Digite um número! Evite numeros negativos e 0. ");
+      return;
+    } else {
+      if (idade < 18) {
+        alert("Você é menor de idade não pode entrar. Acesso negado!");
+        return;
+      } else if ((idade) => 18) {
+        alert(`Você tem ${idade} anos, e pode entrar!`);
+      }
+    }
+    // Segunda verificação (usando switch):
+    var classificacao = prompt(
+      "Informe seu status de pagamento:\n Ex: pago ou Pendente!"
+    );
 
-  // const:atribuição
-  const ingresoVip = "vip";
-  const ingresoPadrão = "Padrão";
-  const ingresoCortesia = "cortesia";
-  const ingresoconVidado = "convidado";
-  // ---------------------------------->
-  // ---------------------------------->
+    var tipoIngresso = prompt(
+      "Digite o seu tipo de ingresso.\n Ex: [vip], [cortesia],[convidado],[padrão]."
+    );
 
-  //  inicio de if e else
-  var idade = +prompt("Informe sua idade:");
-  if (idade == "") {
-    alert("Digite um número!");
-  } else {
-    if (idade < 18) {
-      alert("Você é menor de idade não pode entrar. Acesso negado!");
-    } else if ((idade) => 18) {
-      alert(`Você tem ${idade} anos, e pode entrar!`);
+    var tipoConvite = prompt(
+      "Digite sua classe de convite.\n Ex: a, b =>para vip e cortesia;  c, d, e => para padrão;"
+    );
+
+    switch (tipoIngresso) {
+      case "vip":
+        if (classificacao === "pago") {
+          alert(`ACESSO CONCEDIDO: Ingresso VIP. Bem-vindo à Área VIP!`);
+        } else {
+          alert(`ACESSO NEGADO: Pagamento pendente para ingresso VIP.`);
+        }
+        break;
+      case "padrão":
+        if (classificacao === "pago") {
+          alert(
+            `ACESSO CONCEDIDO: Ingresso Padrão. O seu ingresso não tem permisão para área vip!`
+          );
+        } else {
+          alert(`ACESSO NEGADO: Pagamento pendente!`);
+        }
+        break;
+      case "convidado":
+        alert("Começou a terceira parte da verificação");
+        if (
+          tipoConvite === "a" ||
+          (tipoConvite === "b" && classificacao === "pago")
+        ) {
+          alert(
+            `Acesso concedido. Convite especial (A/B). Você tem acesso total, até mesmo á área vip!`
+          );
+        } else {
+          if (
+            tipoConvite === "c" ||
+            tipoConvite === "d" ||
+            (tipoConvite === "e" && classificacao === "pago")
+          ) {
+            alert(
+              `Acesso concedido, (c/d/e), ingresso normal e você não tem acesso a área vip. `
+            );
+          } else {
+            alert("Acesso negado: código inválido ");
+          }
+        }
+        break;
+      case "cortesia":
+        alert("ACESSO CONCEDIDO: Ingresso Cortesia. Seja muito bem-vindo!");
+        break;
+      default:
+        alert("[ERRO], ingresso não reconhecido");
+        break;
     }
   }
-  // Segunda verificação (usando switch):
-    var classificacão = prompt("Informe sua classe atual que você se encontra no convite:\n Ex: verdo ou vermelho!");
-
-  switch (true){
-    case 'VIP':
-    case 'PADRAO':
-      alert(`sua classificação é verde e você está com o ingresso pago!`)
-  }
-      //    //lasço de repetição
-      // const numero = +prompt("Digite um número:");
-      //     // número primos e nãpo primos.
-      // for (let index = 0; index <= numero; index++) {
-      //   if (index % 2 == 0) {
-      //       alert(`Número par: ${index}`);
-      //     } else if (index % 2 == 1) {
-      //       alert(`Número impar: ${index}`)
-      //     }
-      //   }
-      // -------------------------------->
-          // número par e impar
-      // --------------------------------->
-  const numero = +prompt("Digite um número:");
-  
-  for (let index = 0; index <= numero; index++) {
-    if (numero % 2 == 0) {
-      console.log(`primo `);
-      console.log(`${numero}`);
-      break; // se repete apenas uma vez a repetição
-    } else if (numero % 2 == 1) {
-      console.log(`Não é primo `);
-      console.log(`${numero}`);
-      break; // se repete apenas uma vez a repetição
-    }
-  }
-
+  verificarAcesso();
+      
       // --------------------------------->
 
       // --------------------------------->
