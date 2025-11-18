@@ -1,0 +1,42 @@
+<script>
+    // calculadora com uma função utilizando if else
+  const numero1 = +prompt("Digite um numero");
+  const numero2 = +prompt("Digite um segundo numero");
+  const operacao = prompt("Dgite o tipo de calculo");
+
+  function soma(primeiroNumero, segundoNumero) {
+    const resultado = primeiroNumero + segundoNumero;
+    console.log(resultado);
+  }
+
+  function subtracao(primeiroNumero, segundoNumero) {
+    const resultado = primeiroNumero - segundoNumero;
+    console.log(resultado);
+  }
+
+  function veses(primeiroNumero, segundoNumero) {
+    const resultado = primeiroNumero * segundoNumero;
+    console.log(resultado);
+  }
+
+  function divisao(primeiroNumero, segundoNumero) {
+    const resultado = primeiroNumero / segundoNumero;
+    console.log(resultado);
+  }
+
+  if (operacao == "+") {
+    soma(numero1, numero2);
+  } else {
+    if (operacao == "-") {
+      subtracao(numero1, numero2);
+    } else {
+      if (operacao == "*") {
+        veses(numero1, numero2);
+      } else {
+        if (operacao == "/") {
+          divisao(numero1, numero2);
+        }
+      }
+    }
+  }
+</script>
