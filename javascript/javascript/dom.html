@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style></style>
+    <title>Dom</title>
+  </head>
+  <body>
+    <!-- <input type="text" placeholder="Digite seu nome" id="nomeUsuario" />
+    <input type="text" placeholder="Digite sua cidade" id="nomeCidade" />
+    <button onclick="clickNoButao()">Click me!</button> -->
+
+    <br />
+    <input
+      type="number"
+      placeholder="Digite um numero para calcular"
+      id="primeiroNumero"
+    />
+
+    <input
+      type="number"
+      placeholder="Digite um numero para calcular"
+      id="segundoNumero"
+    />
+    <button onclick="soma()">Mais</button>
+    <button onclick="subtracao()">Menos</button>
+    <button onclick="multiplicacao()">Vezes</button>
+    <button onclick="divisao()">Divisão</button>
+  </body>
+  <script>
+    // esse código vai fazer aparecer o nome no console.log
+
+    // const inputNome = document.getElementById("nomeUsuario");
+
+    // const inputCidade = document.getElementById("nomeCidade");
+
+    // function clickNoButao(onclick) {
+    //   console.log(inputCidade.value);
+    //   console.log(inputNome.value);
+    // }
+
+    const numeroUm = document.getElementById("primeiroNumero");
+    const numeroDois = document.getElementById("segundoNumero");
+
+    function soma() {
+      const res = Number(numeroUm.value) + Number(numeroDois.value);
+      console.log(resMais);
+    }
+    function subtracao() {
+      const res = Number(numeroUm.value) - Number(numeroDois.value);
+      console.log(resMenos);
+    }
+    function multiplicacao() {
+      const res = Number(numeroUm.value) * Number(numeroDois.value);
+      console.log(res);
+    }
+    function divisao() {
+      const res = Number(numeroUm.value) / Number(numeroDois.value);
+      console.log(res);
+    }
+
+
+    // ---------------------------------------------->
+    // ---------------------------------------------->
+  </script>
+</html>
