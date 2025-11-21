@@ -1,0 +1,34 @@
+<script>
+  // var suaIdade = +prompt("Por favor, insira sua idade:");
+  var ingresso = prompt(
+    " Digite qual é o tipo de ingresso que você tem : VIP,NORMAL ou COMVIDADO."
+  );
+  ingresso = ingresso.toLowerCase();
+  function acessoVip() {
+    console.log(`seu ingresso é vip e você tem acesso total a festa.`);
+  }
+  function acessoNormal() {
+    console.log(
+      `seu ingresso é normal e você tem acesso a festa, menos a área vip e a área de comvidados.`
+    );
+  }
+  function acessoComvidado(ingresso) {
+    let ingressoComvidado = "comvidaddo";
+    console.log(
+      `seu ingresso é de comvidado e você tem acesso a todas as áreas da festa.`
+    );
+  }
+  if (ingresso == "vip") {
+    acessoVip();
+  } else {
+    if (ingresso == "normal") {
+      acessoNormal();
+    } else {
+      if (ingresso == "comvidado") {
+        acessoComvidado();
+      } else {
+        console.log(`ingresso inválido, por favor insira um ingresso válido.`);
+      }
+    }
+  }
+</script>
