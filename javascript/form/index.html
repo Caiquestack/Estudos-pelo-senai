@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form onsubmit="esecutar(event)">
+      <input
+        type="text"
+        minlength="3"
+        required
+        placeholder=" Digite seu nome"
+        id="seu nome"
+      />
+      <br />
+      <input
+        type="email"
+        required
+        placeholder="Digite seu e-mail"
+        id="seuEmail"
+      />
+      <br />
+      <input
+        type="password"
+        required
+        minlength="8"
+        placeholder="Digite sua senha "
+        id="senha"
+      />
+      <input
+        type="password"
+        required
+        minlength="8"
+        placeholder="Comfirme sua senha  "
+        id="comfirmarSenha"
+      />
+      <h3>Residente do Brasil</h3>
+
+      <label for="residenteBrasil">sim</label>
+      <input type="checkbox" required id="sim" />
+      <label for="residenteBrasil">não</label>
+      <input type="checkbox" id="nao" /> <br />
+      <br />
+      <button type="submit">enviar</button>
+    </form>
+  </body>
+  <script src="/script.js"></script>
+</html>

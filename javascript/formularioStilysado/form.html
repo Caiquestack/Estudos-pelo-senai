@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Página de loguim</title>
+  </head>
+  <body>
+    <main>
+      <!-- Titulo -->
+      <section class="title">
+        <h1>Cadastre-se para entrar</h1>
+      </section>
+      <div class="conteiner" id="conteiner">
+
+        <form onsubmit="formActive()">
+          <!-- Separando em section -->
+          <section>
+            <!-- nome -->
+            <label> Seu nome:</label>
+            <input
+              type="text"
+              minlength="3"
+              required
+              placeholder=" Digite seu nome"
+              id="nome"
+            />
+          </section>
+
+          <section>
+            <!-- e-mail -->
+            <label>E-mail</label>
+            <input
+              type="email"
+              required
+              placeholder=" Digite seu email"
+              id="email"
+            />
+          </section>
+
+          <section>
+            <!-- cpf -->
+            <label>Digite seu CPF</label>
+            <input type="text"
+            minlength="11"
+            maxlength="11"
+              required
+              placeholder=" Digite seu CPF"
+              id="cpf">
+          </section>
+
+            <section>
+                <!-- senha -->
+                <label>Digite uma senha</label>
+                <input
+                type="password"
+                required
+                minlength="8"
+                placeholder=" Digite sua senha "
+                id="senha"
+                />
+            </section>
+            <section>
+                <!-- comfirmar senha -->
+                <label>Comfirme sua senha</label>
+                <input
+                type="password"
+                required
+                minlength="8"
+                placeholder=" Comfirme sua senha "
+                id="comfirmarSenha"
+                />
+            </section>
+          <section  >
+            <button type="submit" class="btn-enviar">
+              <p>Enviar</p>
+            </button>
+            <button type="reset" onclick="resetForm()" class="btn-limpar">
+              <p>Limpar</p>
+          </section>
+        </form>
+        <div class="caixaMensagem">
+
+        </div>
+      </div>
+    </main>
+    <!-- ------------------------------- -->
+    <!-- ------------------------------- -->
+    <!-- parte do script -->
+    <script src="./scritp.js"></script>
+  </body>
+</html>
