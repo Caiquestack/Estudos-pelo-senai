@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex Simples</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pokédex de Bolso</h1>
+      <div class="search-container">
+        <input
+          type="text"
+          id="pokemon-input"
+          placeholder="Digite o nome ou ID do Pokémon"
+          autofocus
+        />
+        <button id="search-button">Buscar</button>
+      </div>
+
+      <div id="pokemon-info" class="pokemon-card">
+        <p>Use o campo acima para buscar um Pokémon!</p>
+      </div>
+      <div id="history-list" class="pokemon-card">
+        <p>Aqui vai sua lista de pesquisa de pokémom.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
