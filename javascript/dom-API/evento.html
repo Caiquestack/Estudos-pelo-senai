@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configura a visualização para dispositivos móveis -->
+    <title>Mechendo com eventos DOMcontentLoaded Example</title>
+    <!-- Título da página exibido na aba do navegador -->
+    <script>
+      // Adiciona um listener que aguarda o carregamento completo do DOM
+      document.addEventListener("DOMContentLoaded", () => {
+        console.log(" o DOM foi carregado"); // Exibe uma mensagem no console quando o DOM está completamente carregado
+
+        const myElement = document.getElementById("myElement"); // Seleciona o elemento com o ID "myElement"
+
+        if (myElement) {
+          // Verifica se o elemento foi encontrado
+          // myElement.textContent = "Hellow word! Você carregou a página com sucesso."; // (Comentado) Define o texto do elemento
+          // ou também poderia usar innerHTML // (Comentado) Sugestão de uso de innerHTML
+          // Aqui a suaa imaginação é o limite // (Comentado) Indica que o desenvolvedor pode personalizar o conteúdo
+
+          // Define o conteúdo HTML do elemento selecionado
+        //   myElement.innerHTML =
+            // "<h1>Hellow word!</h1><p>Você carregou a página com sucesso.</p>";
+
+            myElement.innerHTML = '<div id="novaDiv"><p>Adicionando mais uma div</p></div>';
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="myElement">Loading...</div>
+    <!-- Elemento que será atualizado após o carregamento do DOM -->
+  </body>
+</html>

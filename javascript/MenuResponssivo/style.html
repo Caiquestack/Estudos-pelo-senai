@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Menu Responssivo</title>
+  </head>
+  <body>
+    <header>
+      <!-- Cabeçalho da página: geralmente contém logo e navegação -->
+      <!-- NAVEGAÇÃO -->
+      <nav class="nav-bar">
+        <!-- Barra de navegação principal -->
+        <!-- ---------------------- -->
+        <!-- ---------------------- -->
+        <!-- TITULO DO NAV -->
+        <div class="logo">
+          <!-- Seção destinada à logo/título da marca -->
+          <h1>Logo</h1>
+          <!-- Título/placeholder da logo -->
+        </div>
+        <!-- -------------------- -->
+        <!-- -------------------- -->
+        <div class="nav-list">
+          <!-- ERRO de tag: deveria ser <div>. Agrupa a lista de links de navegação -->
+          <ul>
+            <!-- Lista de navegação -->
+            <li class="nav-item"><a href="#">Inicio</a></li>
+            <!-- Link para a página inicial -->
+            <li class="nav-item"><a href="#">Projetos</a></li>
+            <!-- Link para a página de projetos -->
+            <li class="nav-item"><a href="#">Sobre</a></li>
+            <!-- Link para a página sobre -->
+          </ul>
+        </div>
+        <!-- -------------------- -->
+        <!-- -------------------- -->
+        <!-- Meu botão responssivo  -->
+        <div>
+          <!-- Seção para ações do menu (ex.: botão hambúrguer em mobile) -->
+          <button class="logui-button"><a href="#">Entrar</a></button>
+          <!-- Botão do menu responsivo (abre/fecha navegação) -->
+        </div>
+        <!-- -------------------- -->
+        <!-- -------------------- -->
+        <!-- Seção para ações do menu (ex.: botão fechar em mobile) -->
+        <div class="mobile-menu-icon">
+          <button class="butom-img" onclick="menuShow()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="36px"
+              viewBox="0 0 24 24"
+              width="36px"
+              fill="#FFFFFF"
+            >
+              <path d="M0 0h24v24H0V0z" fill="none" />
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+          </button>
+        </div>
+        <!-- -------------------- -->
+        <!-- -------------------- -->
+      </nav>
+      <!-- Sub menu para navegção mobile -->
+      <div class="mobile-menu">
+        <ul>
+          <!-- Lista de navegação -->
+          <li class="nav-item"><a href="#">Inicio</a></li>
+          <!-- Link para a página inicial -->
+          <li class="nav-item"><a href="#">Projetos</a></li>
+          <!-- Link para a página de projetos -->
+          <li class="nav-item"><a href="#">Sobre</a></li>
+          <!-- Link para a página sobr  e -->
+        </ul>
+
+        <div class="botaoSub">
+          <button class="logui-button sub"><a href="#">Entrar</a></button>
+        </div>
+      </div>
+    </header>
+    <script src="./script.js"></script>
+  </body>
+</html>

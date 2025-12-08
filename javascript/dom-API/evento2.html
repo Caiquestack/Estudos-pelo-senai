@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício DOMContentLoaded</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: honeydew;
+
+        padding: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        min-height: 100vh;
+      }
+      .container {
+        background-color: rgb(196, 196, 203);
+        border: 2px solid #ccc;
+        border-radius: 8px;
+
+        padding: 15px;
+        width: 500px;
+      }
+      .botao {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+      }
+      button {
+        margin: 5px;
+        padding: 10px 15px;
+
+        cursor: pointer;
+        color: white;
+        border: #ccc;
+        border-radius: 5px;
+        background-color: blue;
+      }
+      .destaque {
+        background-color: yellow;
+      }
+      #items {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .item {
+        color: white;
+        background-color: cyan;
+        border-radius: 5px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 500px;
+        height: 50px;
+      }
+    </style>
+    <script>
+      // Exercício: Complete as tarefas abaixo utilizando DOMContentLoaded
+      document.addEventListener(
+        "DOMContentLoaded",
+        () => {
+          console.log("DOM carregado - Iniciando exercício");
+          const btn = document.getElementById("btnAdicionar");
+          const items = document.getElementById("items");
+          const contador = document.getElementById("contador");
+          const btnlimpar = document.getElementById("btnlimpar");
+
+          // TAREFA 1: Selecione o elemento com id "titulo" e altere seu texto
+          // Dica: Use document.getElementById()
+          const novoTitulo = document.getElementById("titulo");
+          novoTitulo.innerText = "Página interativa com a DOM";
+          //-----------------------------------------------------------
+
+          // TAREFA 2: Selecione todos os elementos com classe "item" e altere a cor de fundo
+          // Dica: Use document.querySelectorAll()
+          const itens = document.querySelectorAll(".item");
+          itens.forEach((item) => {
+            item.style.backgroundColor = "lightgreen";
+          });
+          // TAREFA 3: Adicione um evento de clique no botão com id "btnAdicionar"
+          // que crie uma nova div com classe "item"
+          // Dica: Use addEventListener("click", ...)
+          btn.addEventListener("click", (event) => {
+            const novaDiv = document.createElement("div");
+            novaDiv.className = "item";
+            novaDiv.textContent = `Item ${itens.length + 1}`;
+            items.appendChild(novaDiv);
+            const atual =
+              parseInt(contador.textContent.replace(/\D/g, "")) || 0;
+            contador.textContent = `Cliques: ${atual + 1}`;
+          });
+          btnlimpar.addEventListener("click", (event) => {
+            items.innerHTML = "";
+            contador.textContent = "Cliques: 0";
+          });
+
+          // TAREFA 4: Selecione o elemento com id "contador" e incremente seu valor
+          // toda vez que o botão for clicado
+          // Dica: Use parseInt() para converter string em número
+        },
+        { once: false }
+      );
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="titulo">Título Original</h1>
+      <div id="contador">Cliques: 0</div>
+      <div class="botao">
+        <button id="btnAdicionar">Adicionar Item</button>
+        <button id="btnlimpar">limpar divs</button>
+      </div>
+
+      <div id="items">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+    </div>
+  </body>
+</html>
